@@ -1,2 +1,0 @@
-module MemberEventsHelper
-end
