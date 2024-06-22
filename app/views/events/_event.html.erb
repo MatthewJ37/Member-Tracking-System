@@ -1,0 +1,32 @@
+<div id="<%= dom_id event %>">
+  <p>
+    <strong>Name:</strong>
+    <%= event.name %>
+  </p>
+
+  <p>
+    <strong>Date:</strong>
+    <%= event.date %>
+  </p>
+
+  <% if event.point_type? %>
+    <p>
+      <strong>Point type:</strong>
+      <%= event.point_type %>
+    </p>
+  <% end%>
+
+  <p>
+    <strong>Event type:</strong>
+    <%= event.event_type %>
+  </p>
+
+  <% if event.phrase? %>
+    <% unless @user.position == "Member" %>
+      <p>
+        <strong>Phrase:</strong>
+        <%= event.phrase %>
+      </p>
+    <% end %>
+  <% end %>
+</div>

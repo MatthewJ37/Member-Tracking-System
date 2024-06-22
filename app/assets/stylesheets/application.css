@@ -1,0 +1,166 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ body {
+   background-color: #fff2d5
+ }
+
+ h1 {
+   text-align: center;
+ }
+
+ /* Table CSS Style */
+
+ td {
+  border: 1px solid #000;
+  padding: 8px;
+  text-decoration: none;
+ }
+
+ tr{
+   text-decoration: none;
+   background-color: #fff2d5;
+ }
+
+ tr:nth-child(2n+0){
+   background-color: #fff2dd;
+ }
+
+ tr:hover{
+   background-color: #ffecd1;
+ }
+
+ th{
+   text-decoration: none;
+   padding-top: 12px;
+   padding-bottom: 12px;
+   text-align: left;
+   background-color: #510000;
+   color: #fff2d5;
+ }
+
+ .table-head {
+   text-align: center;
+   text-decoration: none;
+   color: #fff2d5;
+ }
+
+ .table-head:hover {
+   background-color: #410100;
+   text-align: center;
+ }
+
+ .table-head:active {
+   background-color: #410100;
+   border-radius: 5px;
+ }
+
+ .table-link {
+   text-decoration: none;
+   color: #fff2d5
+ }
+
+/* Navbar CSS Style */
+.navbar {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  border: 1px solid #510000;
+  background-color: #510000;
+}
+
+.navbar-nav {
+  position: sticky;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid #510000;
+  background-color: #510000
+}
+
+.nav-item {
+  display: block;
+  color: #666;
+  text-align: center;
+}
+
+.nav-item:hover {
+  background-color: #410100;
+  border-radius: 5px;
+}
+
+.nav-item.active {
+  border-radius: 5px;
+  color: #510000;
+  background-color: #510000;
+}
+
+.nav-link {
+  color: #fff2d5;
+  background-color: #510000;
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  padding: 14px 20px;
+}
+
+.nav-link:hover {
+  color: #CEC5AF;
+  background-color: #410100;
+}
+
+.nav-link:active {
+  color: #CEC5AF;
+  background-color: #2e0100;
+}
+
+.nav-logo {
+  width: 117px;
+  height: 48px;
+}
+
+.nav-avatar {
+  padding: 10px;
+  height: 25px;
+  width: 25px;
+}
+
+.nav-link-sep {
+  color: #fff2d5;
+  background-color: #510000;
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  padding: 14px 20px;
+}
+
+.nav-link-sep:hover {
+  color: #CEC5AF;
+  background-color: #410100;
+}
+
+.nav-link-sep:active {
+  color: #CEC5AF;
+  background-color: #2e0100;
+}
