@@ -62,6 +62,7 @@ class MembersController < ApplicationController
     search_members if params[:search]
     # Sorting the members table based on if it was clicked already or not
     if params[:sort] == @@sorting # if this is so, then items need to be reversed
+      # Determines what it is sorting by
       if params[:sort] == "id"
         $members = $members.sort_by { |member| member.id }.reverse
       elsif params[:sort] == "name"
@@ -91,6 +92,7 @@ class MembersController < ApplicationController
       end
       @@sorting = ''
     elsif params[:sort] != @@sorting # if this is so, items don't need to be reversed
+      # Determines what it is sorting by
       if params[:sort] == "id"
         $members = $members.sort_by { |member| member.id } # must be sort by for array
       elsif params[:sort] == "name"
